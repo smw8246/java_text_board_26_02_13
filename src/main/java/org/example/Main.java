@@ -41,4 +41,5 @@ public class Main {
     System.out.println("== 자바 게시판 종료 ==");
 
     sc.close();
-  }}
+  }
+}
