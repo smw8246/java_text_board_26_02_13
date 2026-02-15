@@ -1,4 +1,4 @@
-package com;
+package org.example;
 
 import java.util.Scanner;
 
@@ -6,6 +6,7 @@ public class Main {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     System.out.println("== 자바 게시판 시작 ==");
+    int lastId = 0;
 
     while (true) {
       System.out.print("명령) ");
@@ -18,7 +19,7 @@ public class Main {
         System.out.print("내용 : ");
         String content = sc.nextLine();
 
-        int id = 1;
+        int id = ++lastId;
         System.out.printf("%d번 게시물이 작성되었습니다.\n", id);
       } else if (cmd.equals("exit")) {
         break;
